@@ -1,0 +1,290 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset='utf-8'>
+        
+        <title>Assignment # 5</title>
+    
+        <script src='app.js'> </script>
+        
+        <script>
+         alert('Hello World!')
+        </script>
+        
+    </head>
+    
+    
+    <body>
+
+        
+
+</body>
+<script>
+
+ // chap  # 21 to 25 task # 1 
+
+ var fname= prompt("Enter your first name : " );
+ var lname= prompt("Enter your last name : " );
+alert("Your Fullname is : " + fname + lname);
+
+ // chap  # 21 to 25 task # 2
+
+var mob= prompt("Enter your favourite mobile model : " );
+alert("My favourite phone is : " + mob);
+
+ // chap  # 21 to 25 task # 3
+
+ var pak= "pakistani";
+ document.write("<br><br> String : Pakistani")
+ document.write("<br> Index of 'n' : " + pak.indexOf("n"));
+
+// chap  # 21 to 25 task # 4
+
+var h= "Hello World";
+ document.write("<br><br> String :Hello World")
+ document.write("<br> Index of 'n' : " + h.lastIndexOf("l"));
+
+
+ // chap  # 21 to 25 task # 5
+
+ var pak= "pakistani";
+ document.write("<br><br> String : Pakistani")
+ document.write("<br> Character at index 3 : " + pak.charAt(3));
+
+ // chap  # 21 to 25 task # 6
+
+ var str = "Islamabad";
+var res = str.replace("Hyderabad");
+
+document.write("<br><br> City : Hyderabad ")
+
+document.write("<br> After replacement : " +res)
+
+// chap  # 21 to 25 task # 7
+
+var message1 = "Ali & Sami are best friends. They play cricket and football together.";
+var message2 = message1.replace("Ali and Sami are best friends. They play cricket and football together.");
+
+document.write("<br><br>  Ali and Sami are best friends. They play cricket and football together.")
+
+document.write("<br> " +message2)
+
+
+// chap  # 21 to 25 task # 8
+
+var string = "472";
+var num = string.toString();
+document.write("<br><br> Value : 472 " )
+document.write("<br> Type : String  ")
+
+document.write("<br>Value : 472 ")
+document.write("<br> Type : Number  ")
+
+
+// chap  # 21 to 25 task # 9
+
+var pea= prompt("Enter word : " );
+var peanut = pea.toUpperCase();
+alert(peanut)
+
+
+// chap  # 21 to 25 task # 10
+
+
+var num = 35.36;
+var without = num.toString().replace(".", "");
+document.write("<br><br> Number :  35.36" ); 
+document.write("<br> Result :" +without);
+
+
+// chap  # 21 to 25 task # 11
+
+var char= prompt("Enter Character : " );
+var c=char.charCodeAt();
+alert("ASCII code is " +c) 
+
+// chap  # 21 to 25 task # 12
+
+var pass= prompt("Enter password : " )
+
+if(pass.length<6){
+    alert("Password must be at least 6 characters long.")
+}
+
+
+else if (pass.length===6){
+    alert(pass)
+}
+else{
+    alert("Password  at least 6 characters long.")
+}
+
+
+// chap  # 21 to 25 task # 13
+
+var university = "University of Karachi";
+var uni = university.split("");
+
+document.write("<br><br> " +uni); 
+
+// chap  # 21 to 25 task # 14
+
+var pak =  prompt("Enter word : " )
+
+var res = pak.charAt(pak.length-1);
+alert("Last character of input is " +res)
+
+// chap  # 21 to 25 task # 15
+
+var str = "The quick brown fox jumps over the lazy dog";
+var  word = "the";
+document.write("<br><br> The quick brown fox jumps over the lazy dog");
+document.write("<br> There are 2 occurence(s) of word  " +word)
+
+// chap  # 26 to 30 task # 1
+
+var num =  3.45214;
+document.write("<br><br> Number : " +num)
+
+document.write("<br> Round off value : " +Math.round(3.45214))
+document.write("<br> Floor value : " +Math.floor(3.45214))
+document.write("<br> Ceil value : " +Math.ceil(3.45214))
+
+// chap  # 26 to 30 task # 2
+
+var abs ;
+document.write("<br><br> The absolute value of -4 is  " +Math.abs(-4))
+
+
+// chap  # 26 to 30 task # 3
+
+var rand = Math.round(Math.random() * 6);
+alert('Random dice value : ' + rand);
+var diceRoll = Math.floor( Math.random() * 6 ) ;
+alert('Random dice value : ' + diceRoll);
+
+// chap  # 26 to 30 task # 4
+
+var head = 1;
+var tail = 2;
+
+var toss = Math.random() * 2;
+var floor = Math.floor(toss)
+if(floor === 0){
+    document.write("0 <br><br> Random Coin Value: Head")
+} else if(floor === 1)
+{
+    document.write("1 <br><br> Random Coin Value: Tails")
+}
+
+
+
+// chap  # 26 to 30 task # 5
+
+
+  
+document.write("<br><br> Random number between 1 to 100 :" +(Math.random() * 100)+1 )
+
+
+// chap  # 31 to 34 task # 1
+
+var today = new Date();
+if(today.getDay() == 6 || today.getDay() == 0) 
+document.write("<br><br> " +today)
+
+// chap  # 31 to 34 task # 2
+ 
+  var months ="July";
+    document.write("<br><br> Current Month :" +months)
+
+
+
+// chap  # 31 to 34 task # 3
+
+    var today = new Date();
+if( today.getDay() == 0) 
+alert("Today is " +today)
+
+
+
+// chap  # 31 to 34 task # 4
+
+document.write("<br><br> ")
+var a = new Date();
+var b = a.toString();
+var c = b.slice(16,19);
+if (c === "12:"){
+    document.write("It's PM")
+}else if(c === "13:"){
+    document.write("It's PM")
+}else if(c === "14:"){
+    document.write("It's PM")
+}else if(c === "15:"){
+    document.write("It's PM")
+}else if(c === "16:"){
+    document.write("It's PM")
+}else if(c === "17:"){
+    document.write("It's PM")
+}else if(c === "18:"){
+    document.write("It's PM")
+}else if(c === "19:"){
+    document.write("It's PM")
+}else if(c === "20:"){
+    document.write("It's PM")
+}else if(c === "21:"){
+    document.write("It's PM")
+}else if(c === "22:"){
+    document.write("It's PM")
+}else if(c === "23:"){
+    document.write("It's PM")
+}else if(c === "24:"){
+    document.write("It's AM")
+}else if(c === "01:"){
+    document.write("It's AM")
+}else if(c === "02:"){
+    document.write("It's AM")
+}else if(c === "03:"){
+    document.write("It's AM")
+}else if(c === "04:"){
+    document.write("It's AM")
+}else if(c === "05:"){
+    document.write("It's AM")
+}else if(c === "06:"){
+    document.write("It's AM")
+}else if(c === "07:"){
+    document.write("It's AM")
+}else if(c === "08:"){
+    document.write("It's AM")
+}else if(c === "09:"){
+    document.write("It's AM")
+}else if(c === "10:"){
+    document.write("It's AM")
+}else if(c === "11:"){
+    document.write("It's AM")
+}
+
+// chap  # 31 to 34 task # 5
+
+var dateobj =  
+   new Date('October 13, 1996 05:35:32'); 
+ 
+   dateobj.setDate(15); 
+ 
+   var B = dateobj.getDate(); 
+  
+   document.write("<br><br> " +B);
+
+   // chap  # 31 to 34 task # 6
+
+
+var age = 23; 
+var dateOfBirth = new Date(new Date().getTime() - age);
+alert(dateOfBirth)
+
+ 
+ 
+</script>
+
+
+</html>
